@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.2</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.example</groupId>
+    <artifactId>demoPom</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>demoPom</name>
+    <url>https://github.com/Prince951-17/bot4scala</url>
+    <description>demoPom</description>
+    <properties>
+        <java.version>11</java.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
+
+<!--<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<url>https://github.com/Prince951-17/bot4scala</url>
+<version>1.0</version>
+<licenses>
+<license>
+<name>Apache 2.0</name>
+<url>http://www.apache.org/licenses/LICENSE-2.0</url>
+<distribution>repo</distribution>
+</license>
+</licenses>
+<name>bot4scala</name>
+<organization>
+<name>uz.scala</name>
+<url>https://github.com/Prince951-17/bot4scala</url>
+</organization>
+<scm>
+<url>https://github.com/Prince951-17/bot4scala</url>
+<connection>scm:git:https://github.com/Prince951-17/bot4scala.git</connection>
+</scm>
+<developers>
+<developer>
+<id>Prince</id>
+<name>Maftunbek Raxmatov</name>
+<url>https://github.com/Prince951-17</url>
+<email>prince777_98@mail.ru</email>
+</developer>
+</developers>
+<dependencies>
+<dependency>
+<groupId>org.scala-lang</groupId>
+<artifactId>scala-library</artifactId>
+<version>2.12.12</version>
+</dependency>
+<dependency>
+<groupId>org.scalaj</groupId>
+<artifactId>scalaj-http_2.12</artifactId>
+<version>2.4.2</version>
+</dependency>
+<dependency>
+<groupId>org.json4s</groupId>
+<artifactId>json4s-native_2.12</artifactId>
+<version>4.0.0</version>
+</dependency>
+</dependencies>
+</project>-->
